@@ -312,9 +312,11 @@ namespace _3_GUI_PresentationLayer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(472, -4);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(412, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 15);
+            this.label1.Size = new System.Drawing.Size(94, 20);
             this.label1.TabIndex = 39;
             this.label1.Text = "NHÂN VIÊN";
             // 
@@ -353,6 +355,7 @@ namespace _3_GUI_PresentationLayer
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_nhanvien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_nhanvien";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

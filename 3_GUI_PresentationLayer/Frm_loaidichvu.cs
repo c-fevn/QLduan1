@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace _3_GUI_PresentationLayer
 {
-    public partial class FrmBanhang : Form
+    public partial class Frm_loaidichvu : Form
     {
-        public FrmBanhang()
+        public Frm_loaidichvu()
         {
             InitializeComponent();
         }
-
     }
 }

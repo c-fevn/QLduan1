@@ -69,7 +69,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // txt_ngay
             // 
-            this.txt_ngay.Location = new System.Drawing.Point(517, 85);
+            this.txt_ngay.Location = new System.Drawing.Point(407, 57);
             this.txt_ngay.Name = "txt_ngay";
             this.txt_ngay.Size = new System.Drawing.Size(150, 23);
             this.txt_ngay.TabIndex = 66;
@@ -85,7 +85,7 @@ namespace _3_GUI_PresentationLayer
             this.groupBox1.Controls.Add(this.rbxnhd);
             this.groupBox1.Controls.Add(this.rbxhd);
             this.groupBox1.Controls.Add(this.txt_maloaidv);
-            this.groupBox1.Location = new System.Drawing.Point(690, 69);
+            this.groupBox1.Location = new System.Drawing.Point(580, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(310, 152);
             this.groupBox1.TabIndex = 65;
@@ -176,7 +176,7 @@ namespace _3_GUI_PresentationLayer
             // cbx_chonldv
             // 
             this.cbx_chonldv.FormattingEnabled = true;
-            this.cbx_chonldv.Location = new System.Drawing.Point(238, 82);
+            this.cbx_chonldv.Location = new System.Drawing.Point(128, 54);
             this.cbx_chonldv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbx_chonldv.Name = "cbx_chonldv";
             this.cbx_chonldv.Size = new System.Drawing.Size(150, 23);
@@ -184,7 +184,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_dong
             // 
-            this.btn_dong.Location = new System.Drawing.Point(847, 463);
+            this.btn_dong.Location = new System.Drawing.Point(737, 435);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(75, 23);
             this.btn_dong.TabIndex = 62;
@@ -193,7 +193,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_danhsach
             // 
-            this.btn_danhsach.Location = new System.Drawing.Point(728, 463);
+            this.btn_danhsach.Location = new System.Drawing.Point(618, 435);
             this.btn_danhsach.Name = "btn_danhsach";
             this.btn_danhsach.Size = new System.Drawing.Size(87, 23);
             this.btn_danhsach.TabIndex = 61;
@@ -202,7 +202,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_boqua
             // 
-            this.btn_boqua.Location = new System.Drawing.Point(609, 463);
+            this.btn_boqua.Location = new System.Drawing.Point(499, 435);
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(75, 23);
             this.btn_boqua.TabIndex = 60;
@@ -211,7 +211,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_luu
             // 
-            this.btn_luu.Location = new System.Drawing.Point(501, 463);
+            this.btn_luu.Location = new System.Drawing.Point(391, 435);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(75, 23);
             this.btn_luu.TabIndex = 59;
@@ -220,7 +220,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_sua
             // 
-            this.btn_sua.Location = new System.Drawing.Point(397, 463);
+            this.btn_sua.Location = new System.Drawing.Point(287, 435);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(75, 23);
             this.btn_sua.TabIndex = 58;
@@ -229,7 +229,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_xoa
             // 
-            this.btn_xoa.Location = new System.Drawing.Point(295, 463);
+            this.btn_xoa.Location = new System.Drawing.Point(185, 435);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(75, 23);
             this.btn_xoa.TabIndex = 57;
@@ -238,7 +238,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_them
             // 
-            this.btn_them.Location = new System.Drawing.Point(191, 463);
+            this.btn_them.Location = new System.Drawing.Point(81, 435);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(75, 23);
             this.btn_them.TabIndex = 56;
@@ -247,7 +247,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_timkiem
             // 
-            this.btn_timkiem.Location = new System.Drawing.Point(648, 411);
+            this.btn_timkiem.Location = new System.Drawing.Point(538, 383);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(75, 23);
             this.btn_timkiem.TabIndex = 63;
@@ -258,7 +258,7 @@ namespace _3_GUI_PresentationLayer
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(156, 227);
+            this.dataGridView1.Location = new System.Drawing.Point(46, 199);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
@@ -268,7 +268,7 @@ namespace _3_GUI_PresentationLayer
             // 
             // txt_timkiem
             // 
-            this.txt_timkiem.Location = new System.Drawing.Point(409, 411);
+            this.txt_timkiem.Location = new System.Drawing.Point(299, 383);
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(204, 23);
             this.txt_timkiem.TabIndex = 54;
@@ -276,7 +276,7 @@ namespace _3_GUI_PresentationLayer
             // cbx_khonghoatdong
             // 
             this.cbx_khonghoatdong.AutoSize = true;
-            this.cbx_khonghoatdong.Location = new System.Drawing.Point(517, 174);
+            this.cbx_khonghoatdong.Location = new System.Drawing.Point(407, 146);
             this.cbx_khonghoatdong.Name = "cbx_khonghoatdong";
             this.cbx_khonghoatdong.Size = new System.Drawing.Size(140, 19);
             this.cbx_khonghoatdong.TabIndex = 52;
@@ -286,7 +286,7 @@ namespace _3_GUI_PresentationLayer
             // cbx_hoatdong
             // 
             this.cbx_hoatdong.AutoSize = true;
-            this.cbx_hoatdong.Location = new System.Drawing.Point(517, 150);
+            this.cbx_hoatdong.Location = new System.Drawing.Point(407, 122);
             this.cbx_hoatdong.Name = "cbx_hoatdong";
             this.cbx_hoatdong.Size = new System.Drawing.Size(95, 19);
             this.cbx_hoatdong.TabIndex = 53;
@@ -296,7 +296,7 @@ namespace _3_GUI_PresentationLayer
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(407, 162);
+            this.label5.Location = new System.Drawing.Point(297, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 15);
             this.label5.TabIndex = 51;
@@ -304,21 +304,21 @@ namespace _3_GUI_PresentationLayer
             // 
             // txt_giadv
             // 
-            this.txt_giadv.Location = new System.Drawing.Point(238, 179);
+            this.txt_giadv.Location = new System.Drawing.Point(128, 151);
             this.txt_giadv.Name = "txt_giadv";
             this.txt_giadv.Size = new System.Drawing.Size(150, 23);
             this.txt_giadv.TabIndex = 50;
             // 
             // txt_madv
             // 
-            this.txt_madv.Location = new System.Drawing.Point(238, 112);
+            this.txt_madv.Location = new System.Drawing.Point(128, 84);
             this.txt_madv.Name = "txt_madv";
             this.txt_madv.Size = new System.Drawing.Size(150, 23);
             this.txt_madv.TabIndex = 49;
             // 
             // txt_tendv
             // 
-            this.txt_tendv.Location = new System.Drawing.Point(238, 145);
+            this.txt_tendv.Location = new System.Drawing.Point(128, 117);
             this.txt_tendv.Name = "txt_tendv";
             this.txt_tendv.Size = new System.Drawing.Size(150, 23);
             this.txt_tendv.TabIndex = 48;
@@ -326,7 +326,7 @@ namespace _3_GUI_PresentationLayer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(407, 90);
+            this.label4.Location = new System.Drawing.Point(297, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 15);
             this.label4.TabIndex = 45;
@@ -335,7 +335,7 @@ namespace _3_GUI_PresentationLayer
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(150, 85);
+            this.label7.Location = new System.Drawing.Point(40, 57);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 15);
             this.label7.TabIndex = 44;
@@ -344,7 +344,7 @@ namespace _3_GUI_PresentationLayer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(155, 183);
+            this.label3.Location = new System.Drawing.Point(45, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 15);
             this.label3.TabIndex = 43;
@@ -353,7 +353,7 @@ namespace _3_GUI_PresentationLayer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(155, 148);
+            this.label6.Location = new System.Drawing.Point(45, 120);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 15);
             this.label6.TabIndex = 46;
@@ -362,7 +362,7 @@ namespace _3_GUI_PresentationLayer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(157, 115);
+            this.label2.Location = new System.Drawing.Point(47, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 47;
@@ -371,9 +371,11 @@ namespace _3_GUI_PresentationLayer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(479, 58);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(380, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 15);
+            this.label1.Size = new System.Drawing.Size(70, 20);
             this.label1.TabIndex = 42;
             this.label1.Text = "DỊCH VỤ";
             // 
@@ -381,7 +383,7 @@ namespace _3_GUI_PresentationLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 545);
+            this.ClientSize = new System.Drawing.Size(925, 485);
             this.Controls.Add(this.txt_ngay);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cbx_chonldv);
@@ -408,6 +410,7 @@ namespace _3_GUI_PresentationLayer
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_dichvu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_dichvu";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
