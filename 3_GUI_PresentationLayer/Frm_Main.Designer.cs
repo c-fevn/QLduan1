@@ -30,8 +30,9 @@ namespace _3_GUI_PresentationLayer
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_thanhtoan = new System.Windows.Forms.Button();
-            this.btn_nhanvien = new System.Windows.Forms.Button();
+            this.btn_khachhang = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
             this.btn_banhang = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -45,16 +46,19 @@ namespace _3_GUI_PresentationLayer
             this.dịchVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btn_nhanvien = new System.Windows.Forms.Button();
+            this.btn_dichvu = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_dichvu);
+            this.groupBox1.Controls.Add(this.btn_nhanvien);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btn_thanhtoan);
-            this.groupBox1.Controls.Add(this.btn_nhanvien);
+            this.groupBox1.Controls.Add(this.btn_khachhang);
             this.groupBox1.Controls.Add(this.btn_thoat);
             this.groupBox1.Controls.Add(this.btn_banhang);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -64,10 +68,21 @@ namespace _3_GUI_PresentationLayer
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label1.Location = new System.Drawing.Point(12, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "CHỨC NĂNG";
+            // 
             // btn_thanhtoan
             // 
             this.btn_thanhtoan.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_thanhtoan.Location = new System.Drawing.Point(0, 154);
+            this.btn_thanhtoan.Location = new System.Drawing.Point(0, 139);
             this.btn_thanhtoan.Name = "btn_thanhtoan";
             this.btn_thanhtoan.Size = new System.Drawing.Size(174, 54);
             this.btn_thanhtoan.TabIndex = 3;
@@ -75,21 +90,21 @@ namespace _3_GUI_PresentationLayer
             this.btn_thanhtoan.UseVisualStyleBackColor = false;
             this.btn_thanhtoan.Click += new System.EventHandler(this.btn_thanhtoan_Click);
             // 
-            // btn_nhanvien
+            // btn_khachhang
             // 
-            this.btn_nhanvien.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btn_nhanvien.Location = new System.Drawing.Point(0, 223);
-            this.btn_nhanvien.Name = "btn_nhanvien";
-            this.btn_nhanvien.Size = new System.Drawing.Size(174, 54);
-            this.btn_nhanvien.TabIndex = 2;
-            this.btn_nhanvien.Text = "QL_Nhân viên";
-            this.btn_nhanvien.UseVisualStyleBackColor = false;
-            this.btn_nhanvien.Click += new System.EventHandler(this.btn_nhanvien_Click);
+            this.btn_khachhang.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_khachhang.Location = new System.Drawing.Point(0, 199);
+            this.btn_khachhang.Name = "btn_khachhang";
+            this.btn_khachhang.Size = new System.Drawing.Size(174, 54);
+            this.btn_khachhang.TabIndex = 2;
+            this.btn_khachhang.Text = "QL_Khach hàng";
+            this.btn_khachhang.UseVisualStyleBackColor = false;
+            this.btn_khachhang.Click += new System.EventHandler(this.btn_nhanvien_Click);
             // 
             // btn_thoat
             // 
             this.btn_thoat.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_thoat.Location = new System.Drawing.Point(0, 292);
+            this.btn_thoat.Location = new System.Drawing.Point(0, 375);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(174, 54);
             this.btn_thoat.TabIndex = 1;
@@ -164,19 +179,19 @@ namespace _3_GUI_PresentationLayer
             // kháchHàngToolStripMenuItem
             // 
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
             // 
             // sảnPhẩmToolStripMenuItem
             // 
             this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.sảnPhẩmToolStripMenuItem.Text = "Sản Phẩm";
             // 
             // dịchVụToolStripMenuItem
             // 
             this.dịchVụToolStripMenuItem.Name = "dịchVụToolStripMenuItem";
-            this.dịchVụToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dịchVụToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.dịchVụToolStripMenuItem.Text = "Dịch vụ";
             // 
             // thôngKêToolStripMenuItem
@@ -191,16 +206,25 @@ namespace _3_GUI_PresentationLayer
             this.thoátToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
             this.thoátToolStripMenuItem.Text = "Giới Thiệu";
             // 
-            // label1
+            // btn_nhanvien
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label1.Location = new System.Drawing.Point(12, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "CHỨC NĂNG";
+            this.btn_nhanvien.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_nhanvien.Location = new System.Drawing.Point(0, 259);
+            this.btn_nhanvien.Name = "btn_nhanvien";
+            this.btn_nhanvien.Size = new System.Drawing.Size(174, 54);
+            this.btn_nhanvien.TabIndex = 4;
+            this.btn_nhanvien.Text = "QL_Nhân viên";
+            this.btn_nhanvien.UseVisualStyleBackColor = false;
+            // 
+            // btn_dichvu
+            // 
+            this.btn_dichvu.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btn_dichvu.Location = new System.Drawing.Point(0, 315);
+            this.btn_dichvu.Name = "btn_dichvu";
+            this.btn_dichvu.Size = new System.Drawing.Size(174, 54);
+            this.btn_dichvu.TabIndex = 5;
+            this.btn_dichvu.Text = "Dich vu";
+            this.btn_dichvu.UseVisualStyleBackColor = false;
             // 
             // Frm_Main
             // 
@@ -240,8 +264,10 @@ namespace _3_GUI_PresentationLayer
         private System.Windows.Forms.ToolStripMenuItem sảnPhẩmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dịchVụToolStripMenuItem;
         private System.Windows.Forms.Button btn_thanhtoan;
-        private System.Windows.Forms.Button btn_nhanvien;
+        private System.Windows.Forms.Button btn_khachhang;
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_nhanvien;
+        private System.Windows.Forms.Button btn_dichvu;
     }
 }
