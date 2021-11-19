@@ -1,0 +1,15 @@
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\2_BUS_BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\2_BUS_BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\2_BUS_BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\2_BUS_BusinessLayer.AssemblyInfo.cs
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\2_BUS_BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\bin\Debug\net5.0\2_BUS_BusinessLayer.deps.json
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\bin\Debug\net5.0\2_BUS_BusinessLayer.dll
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\bin\Debug\net5.0\ref\2_BUS_BusinessLayer.dll
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\bin\Debug\net5.0\2_BUS_BusinessLayer.pdb
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\bin\Debug\net5.0\1_DAL_DataAccessLayer.dll
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\bin\Debug\net5.0\1_DAL_DataAccessLayer.pdb
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\2_BUS_BusinessLayer.csproj.CopyComplete
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\2_BUS_BusinessLayer.dll
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\ref\2_BUS_BusinessLayer.dll
+C:\Users\Quang\source\repos\QLDUAN1\2_BUS_BusinessLayer\obj\Debug\net5.0\2_BUS_BusinessLayer.pdb
