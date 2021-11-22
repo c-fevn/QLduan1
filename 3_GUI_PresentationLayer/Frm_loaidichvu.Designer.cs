@@ -45,6 +45,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.btn_dong = new System.Windows.Forms.Button();
+            this.btn_boqua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,6 +120,7 @@ namespace _3_GUI_PresentationLayer
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(478, 337);
             this.dataGridView1.TabIndex = 51;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label1
             // 
@@ -139,6 +141,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_luu.TabIndex = 63;
             this.btn_luu.Text = "LƯU";
             this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // btn_sua
             // 
@@ -148,6 +151,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_sua.TabIndex = 62;
             this.btn_sua.Text = "SỬA";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
@@ -157,6 +161,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_xoa.TabIndex = 61;
             this.btn_xoa.Text = "XÓA";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 
@@ -166,6 +171,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_them.TabIndex = 60;
             this.btn_them.Text = "THÊM";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_timkiem
             // 
@@ -175,6 +181,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_timkiem.TabIndex = 65;
             this.btn_timkiem.Text = "TÌM KIẾM";
             this.btn_timkiem.UseVisualStyleBackColor = true;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // txt_timkiem
             // 
@@ -185,18 +192,30 @@ namespace _3_GUI_PresentationLayer
             // 
             // btn_dong
             // 
-            this.btn_dong.Location = new System.Drawing.Point(24, 344);
+            this.btn_dong.Location = new System.Drawing.Point(156, 344);
             this.btn_dong.Name = "btn_dong";
             this.btn_dong.Size = new System.Drawing.Size(100, 39);
             this.btn_dong.TabIndex = 66;
             this.btn_dong.Text = "ĐÓNG";
             this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
+            // 
+            // btn_boqua
+            // 
+            this.btn_boqua.Location = new System.Drawing.Point(24, 344);
+            this.btn_boqua.Name = "btn_boqua";
+            this.btn_boqua.Size = new System.Drawing.Size(100, 39);
+            this.btn_boqua.TabIndex = 67;
+            this.btn_boqua.Text = "LOAD";
+            this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // Frm_loaidichvu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_boqua);
             this.Controls.Add(this.btn_dong);
             this.Controls.Add(this.btn_timkiem);
             this.Controls.Add(this.txt_timkiem);
@@ -216,6 +235,7 @@ namespace _3_GUI_PresentationLayer
             this.Name = "Frm_loaidichvu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_loaidichvu";
+            this.Load += new System.EventHandler(this.Frm_loaidichvu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -240,5 +260,6 @@ namespace _3_GUI_PresentationLayer
         private System.Windows.Forms.Button btn_timkiem;
         private System.Windows.Forms.TextBox txt_timkiem;
         private System.Windows.Forms.Button btn_dong;
+        private System.Windows.Forms.Button btn_boqua;
     }
 }

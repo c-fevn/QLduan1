@@ -34,6 +34,13 @@ namespace _3_GUI_PresentationLayer
         private void btn_thanhtoan_Click(object sender, EventArgs e)
         {
 
+            MessageBox.Show("thanhtoan mo", "thông báo");
+        }
+
+        private void btn_khachhang_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("khachhang mo", "thông báo");
         }
 
         private void btn_nhanvien_Click(object sender, EventArgs e)
@@ -41,6 +48,23 @@ namespace _3_GUI_PresentationLayer
             Frm_nhanvien frm_Nhanvien = new Frm_nhanvien();
             frm_Nhanvien.MdiParent = this;
             frm_Nhanvien.Show();
+            MessageBox.Show("nhanvien mo", "thông báo");
+        }
+
+        private void dịchVụToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_dichvu frm_Dichvu = new Frm_dichvu();
+            frm_Dichvu.MdiParent = this;
+            frm_Dichvu.Show();
+            MessageBox.Show("nhanvien mo", "thông báo");
+        }
+
+        private void loạiDịchVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_loaidichvu frm_Loaidichvu = new Frm_loaidichvu();
+            frm_Loaidichvu.MdiParent = this;
+            frm_Loaidichvu.Show();
+            MessageBox.Show("nhanvien mo", "thông báo");
         }
     }
 }

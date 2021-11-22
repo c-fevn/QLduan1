@@ -268,9 +268,9 @@ namespace _3_GUI_PresentationLayer
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(680, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 21);
+            this.label5.Size = new System.Drawing.Size(103, 21);
             this.label5.TabIndex = 89;
-            this.label5.Text = "Khách Cần Trả:";
+            this.label5.Text = "Khách Đã Trả:";
             // 
             // label4
             // 

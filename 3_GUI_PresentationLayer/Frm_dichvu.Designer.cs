@@ -29,17 +29,6 @@ namespace _3_GUI_PresentationLayer
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_ngay = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_sualoai = new System.Windows.Forms.Button();
-            this.btn_themloai = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_tenloaidv = new System.Windows.Forms.TextBox();
-            this.rbxnhd = new System.Windows.Forms.RadioButton();
-            this.rbxhd = new System.Windows.Forms.RadioButton();
-            this.txt_maloaidv = new System.Windows.Forms.TextBox();
             this.cbx_chonldv = new System.Windows.Forms.ComboBox();
             this.btn_dong = new System.Windows.Forms.Button();
             this.btn_danhsach = new System.Windows.Forms.Button();
@@ -51,8 +40,6 @@ namespace _3_GUI_PresentationLayer
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
-            this.cbx_khonghoatdong = new System.Windows.Forms.CheckBox();
-            this.cbx_hoatdong = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_giadv = new System.Windows.Forms.TextBox();
             this.txt_madv = new System.Windows.Forms.TextBox();
@@ -63,120 +50,16 @@ namespace _3_GUI_PresentationLayer
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.datengaysudung = new System.Windows.Forms.DateTimePicker();
+            this.rdo_hoatdong = new System.Windows.Forms.RadioButton();
+            this.rdo_ngunghd = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txt_ngay
-            // 
-            this.txt_ngay.Location = new System.Drawing.Point(407, 57);
-            this.txt_ngay.Name = "txt_ngay";
-            this.txt_ngay.Size = new System.Drawing.Size(150, 23);
-            this.txt_ngay.TabIndex = 66;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btn_sualoai);
-            this.groupBox1.Controls.Add(this.btn_themloai);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.txt_tenloaidv);
-            this.groupBox1.Controls.Add(this.rbxnhd);
-            this.groupBox1.Controls.Add(this.rbxhd);
-            this.groupBox1.Controls.Add(this.txt_maloaidv);
-            this.groupBox1.Location = new System.Drawing.Point(580, 41);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(310, 152);
-            this.groupBox1.TabIndex = 65;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Loại dịch vụ";
-            // 
-            // btn_sualoai
-            // 
-            this.btn_sualoai.Location = new System.Drawing.Point(235, 123);
-            this.btn_sualoai.Name = "btn_sualoai";
-            this.btn_sualoai.Size = new System.Drawing.Size(75, 23);
-            this.btn_sualoai.TabIndex = 45;
-            this.btn_sualoai.Text = "Sửa";
-            this.btn_sualoai.UseVisualStyleBackColor = true;
-            // 
-            // btn_themloai
-            // 
-            this.btn_themloai.Location = new System.Drawing.Point(235, 93);
-            this.btn_themloai.Name = "btn_themloai";
-            this.btn_themloai.Size = new System.Drawing.Size(75, 23);
-            this.btn_themloai.TabIndex = 44;
-            this.btn_themloai.Text = "Thêm";
-            this.btn_themloai.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 109);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 30);
-            this.label10.TabIndex = 43;
-            this.label10.Text = "Trạng thái \r\nloại DV";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 63);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 15);
-            this.label9.TabIndex = 42;
-            this.label9.Text = "Tên loại DV";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 15);
-            this.label8.TabIndex = 41;
-            this.label8.Text = "Mã loại DV";
-            // 
-            // txt_tenloaidv
-            // 
-            this.txt_tenloaidv.Location = new System.Drawing.Point(95, 55);
-            this.txt_tenloaidv.Name = "txt_tenloaidv";
-            this.txt_tenloaidv.Size = new System.Drawing.Size(124, 23);
-            this.txt_tenloaidv.TabIndex = 3;
-            // 
-            // rbxnhd
-            // 
-            this.rbxnhd.AutoSize = true;
-            this.rbxnhd.Location = new System.Drawing.Point(95, 129);
-            this.rbxnhd.Name = "rbxnhd";
-            this.rbxnhd.Size = new System.Drawing.Size(118, 19);
-            this.rbxnhd.TabIndex = 2;
-            this.rbxnhd.TabStop = true;
-            this.rbxnhd.Text = "ngừng hoạt động";
-            this.rbxnhd.UseVisualStyleBackColor = true;
-            // 
-            // rbxhd
-            // 
-            this.rbxhd.AutoSize = true;
-            this.rbxhd.Location = new System.Drawing.Point(95, 104);
-            this.rbxhd.Name = "rbxhd";
-            this.rbxhd.Size = new System.Drawing.Size(80, 19);
-            this.rbxhd.TabIndex = 1;
-            this.rbxhd.TabStop = true;
-            this.rbxhd.Text = "hoạt động";
-            this.rbxhd.UseVisualStyleBackColor = true;
-            // 
-            // txt_maloaidv
-            // 
-            this.txt_maloaidv.Location = new System.Drawing.Point(95, 26);
-            this.txt_maloaidv.Name = "txt_maloaidv";
-            this.txt_maloaidv.Size = new System.Drawing.Size(124, 23);
-            this.txt_maloaidv.TabIndex = 0;
             // 
             // cbx_chonldv
             // 
             this.cbx_chonldv.FormattingEnabled = true;
-            this.cbx_chonldv.Location = new System.Drawing.Point(128, 54);
+            this.cbx_chonldv.Location = new System.Drawing.Point(185, 54);
             this.cbx_chonldv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbx_chonldv.Name = "cbx_chonldv";
             this.cbx_chonldv.Size = new System.Drawing.Size(150, 23);
@@ -190,6 +73,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_dong.TabIndex = 62;
             this.btn_dong.Text = "ĐÓNG";
             this.btn_dong.UseVisualStyleBackColor = true;
+            this.btn_dong.Click += new System.EventHandler(this.btn_dong_Click);
             // 
             // btn_danhsach
             // 
@@ -199,6 +83,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_danhsach.TabIndex = 61;
             this.btn_danhsach.Text = "DANH SÁCH";
             this.btn_danhsach.UseVisualStyleBackColor = true;
+            this.btn_danhsach.Click += new System.EventHandler(this.btn_danhsach_Click);
             // 
             // btn_boqua
             // 
@@ -206,8 +91,9 @@ namespace _3_GUI_PresentationLayer
             this.btn_boqua.Name = "btn_boqua";
             this.btn_boqua.Size = new System.Drawing.Size(75, 23);
             this.btn_boqua.TabIndex = 60;
-            this.btn_boqua.Text = "BỎ QUA";
+            this.btn_boqua.Text = "LOAD";
             this.btn_boqua.UseVisualStyleBackColor = true;
+            this.btn_boqua.Click += new System.EventHandler(this.btn_boqua_Click);
             // 
             // btn_luu
             // 
@@ -217,6 +103,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_luu.TabIndex = 59;
             this.btn_luu.Text = "LƯU";
             this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // btn_sua
             // 
@@ -226,6 +113,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_sua.TabIndex = 58;
             this.btn_sua.Text = "SỬA";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
@@ -235,6 +123,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_xoa.TabIndex = 57;
             this.btn_xoa.Text = "XÓA";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 
@@ -244,6 +133,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_them.TabIndex = 56;
             this.btn_them.Text = "THÊM";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_timkiem
             // 
@@ -253,6 +143,7 @@ namespace _3_GUI_PresentationLayer
             this.btn_timkiem.TabIndex = 63;
             this.btn_timkiem.Text = "TÌM KIẾM";
             this.btn_timkiem.UseVisualStyleBackColor = true;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // dataGridView1
             // 
@@ -265,6 +156,7 @@ namespace _3_GUI_PresentationLayer
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(844, 176);
             this.dataGridView1.TabIndex = 55;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // txt_timkiem
             // 
@@ -273,30 +165,10 @@ namespace _3_GUI_PresentationLayer
             this.txt_timkiem.Size = new System.Drawing.Size(204, 23);
             this.txt_timkiem.TabIndex = 54;
             // 
-            // cbx_khonghoatdong
-            // 
-            this.cbx_khonghoatdong.AutoSize = true;
-            this.cbx_khonghoatdong.Location = new System.Drawing.Point(407, 146);
-            this.cbx_khonghoatdong.Name = "cbx_khonghoatdong";
-            this.cbx_khonghoatdong.Size = new System.Drawing.Size(140, 19);
-            this.cbx_khonghoatdong.TabIndex = 52;
-            this.cbx_khonghoatdong.Text = "NGỪNG HOẠT ĐỘNG";
-            this.cbx_khonghoatdong.UseVisualStyleBackColor = true;
-            // 
-            // cbx_hoatdong
-            // 
-            this.cbx_hoatdong.AutoSize = true;
-            this.cbx_hoatdong.Location = new System.Drawing.Point(407, 122);
-            this.cbx_hoatdong.Name = "cbx_hoatdong";
-            this.cbx_hoatdong.Size = new System.Drawing.Size(95, 19);
-            this.cbx_hoatdong.TabIndex = 53;
-            this.cbx_hoatdong.Text = "HOẠT ĐỘNG";
-            this.cbx_hoatdong.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(297, 134);
+            this.label5.Location = new System.Drawing.Point(419, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 15);
             this.label5.TabIndex = 51;
@@ -304,21 +176,21 @@ namespace _3_GUI_PresentationLayer
             // 
             // txt_giadv
             // 
-            this.txt_giadv.Location = new System.Drawing.Point(128, 151);
+            this.txt_giadv.Location = new System.Drawing.Point(185, 151);
             this.txt_giadv.Name = "txt_giadv";
             this.txt_giadv.Size = new System.Drawing.Size(150, 23);
             this.txt_giadv.TabIndex = 50;
             // 
             // txt_madv
             // 
-            this.txt_madv.Location = new System.Drawing.Point(128, 84);
+            this.txt_madv.Location = new System.Drawing.Point(185, 84);
             this.txt_madv.Name = "txt_madv";
             this.txt_madv.Size = new System.Drawing.Size(150, 23);
             this.txt_madv.TabIndex = 49;
             // 
             // txt_tendv
             // 
-            this.txt_tendv.Location = new System.Drawing.Point(128, 117);
+            this.txt_tendv.Location = new System.Drawing.Point(185, 117);
             this.txt_tendv.Name = "txt_tendv";
             this.txt_tendv.Size = new System.Drawing.Size(150, 23);
             this.txt_tendv.TabIndex = 48;
@@ -326,7 +198,7 @@ namespace _3_GUI_PresentationLayer
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(297, 62);
+            this.label4.Location = new System.Drawing.Point(419, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 15);
             this.label4.TabIndex = 45;
@@ -335,7 +207,7 @@ namespace _3_GUI_PresentationLayer
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 57);
+            this.label7.Location = new System.Drawing.Point(97, 57);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 15);
             this.label7.TabIndex = 44;
@@ -344,7 +216,7 @@ namespace _3_GUI_PresentationLayer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(45, 155);
+            this.label3.Location = new System.Drawing.Point(102, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 15);
             this.label3.TabIndex = 43;
@@ -353,7 +225,7 @@ namespace _3_GUI_PresentationLayer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 120);
+            this.label6.Location = new System.Drawing.Point(102, 120);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 15);
             this.label6.TabIndex = 46;
@@ -362,7 +234,7 @@ namespace _3_GUI_PresentationLayer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 87);
+            this.label2.Location = new System.Drawing.Point(104, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 47;
@@ -379,13 +251,46 @@ namespace _3_GUI_PresentationLayer
             this.label1.TabIndex = 42;
             this.label1.Text = "DỊCH VỤ";
             // 
+            // datengaysudung
+            // 
+            this.datengaysudung.CustomFormat = "yyyy/mm/dd";
+            this.datengaysudung.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datengaysudung.Location = new System.Drawing.Point(566, 62);
+            this.datengaysudung.Name = "datengaysudung";
+            this.datengaysudung.Size = new System.Drawing.Size(200, 23);
+            this.datengaysudung.TabIndex = 65;
+            this.datengaysudung.Value = new System.DateTime(2021, 11, 22, 0, 41, 2, 0);
+            // 
+            // rdo_hoatdong
+            // 
+            this.rdo_hoatdong.AutoSize = true;
+            this.rdo_hoatdong.Location = new System.Drawing.Point(538, 132);
+            this.rdo_hoatdong.Name = "rdo_hoatdong";
+            this.rdo_hoatdong.Size = new System.Drawing.Size(82, 19);
+            this.rdo_hoatdong.TabIndex = 66;
+            this.rdo_hoatdong.TabStop = true;
+            this.rdo_hoatdong.Text = "Hoạt động";
+            this.rdo_hoatdong.UseVisualStyleBackColor = true;
+            // 
+            // rdo_ngunghd
+            // 
+            this.rdo_ngunghd.AutoSize = true;
+            this.rdo_ngunghd.Location = new System.Drawing.Point(672, 130);
+            this.rdo_ngunghd.Name = "rdo_ngunghd";
+            this.rdo_ngunghd.Size = new System.Drawing.Size(120, 19);
+            this.rdo_ngunghd.TabIndex = 67;
+            this.rdo_ngunghd.TabStop = true;
+            this.rdo_ngunghd.Text = "Ngừng hoạt động";
+            this.rdo_ngunghd.UseVisualStyleBackColor = true;
+            // 
             // Frm_dichvu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 485);
-            this.Controls.Add(this.txt_ngay);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.rdo_ngunghd);
+            this.Controls.Add(this.rdo_hoatdong);
+            this.Controls.Add(this.datengaysudung);
             this.Controls.Add(this.cbx_chonldv);
             this.Controls.Add(this.btn_dong);
             this.Controls.Add(this.btn_danhsach);
@@ -397,8 +302,6 @@ namespace _3_GUI_PresentationLayer
             this.Controls.Add(this.btn_timkiem);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_timkiem);
-            this.Controls.Add(this.cbx_khonghoatdong);
-            this.Controls.Add(this.cbx_hoatdong);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_giadv);
             this.Controls.Add(this.txt_madv);
@@ -412,8 +315,6 @@ namespace _3_GUI_PresentationLayer
             this.Name = "Frm_dichvu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_dichvu";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -421,18 +322,6 @@ namespace _3_GUI_PresentationLayer
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txt_ngay;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_sualoai;
-        private System.Windows.Forms.Button btn_themloai;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_tenloaidv;
-        private System.Windows.Forms.RadioButton rbxnhd;
-        private System.Windows.Forms.RadioButton rbxhd;
-        private System.Windows.Forms.TextBox txt_maloaidv;
         private System.Windows.Forms.ComboBox cbx_chonldv;
         private System.Windows.Forms.Button btn_dong;
         private System.Windows.Forms.Button btn_danhsach;
@@ -444,8 +333,6 @@ namespace _3_GUI_PresentationLayer
         private System.Windows.Forms.Button btn_timkiem;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txt_timkiem;
-        private System.Windows.Forms.CheckBox cbx_khonghoatdong;
-        private System.Windows.Forms.CheckBox cbx_hoatdong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_giadv;
         private System.Windows.Forms.TextBox txt_madv;
@@ -456,5 +343,8 @@ namespace _3_GUI_PresentationLayer
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker datengaysudung;
+        private System.Windows.Forms.RadioButton rdo_hoatdong;
+        private System.Windows.Forms.RadioButton rdo_ngunghd;
     }
 }
