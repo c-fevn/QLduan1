@@ -131,12 +131,32 @@ namespace _3_GUI_PresentationLayer
         
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-
-            if (checkma() == false) { MessageBox.Show("ma dichvu khong ton tai", "Thông báo"); return; }
-            _BUSdichvus.XoaDichvu(txt_madv.Text);
-            MessageBox.Show("xoa thanh cong ", "thông báo ");
+           DialogResult hoi = MessageBox.Show("xóa se doi thanh ngừng hoatdong?", "thong báo",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(hoi == DialogResult.No) {
+                if (checkma() == false) { MessageBox.Show("ma dichvu khong ton tai", "Thông báo"); return; }
+                _BUSdichvus.XoaDichvu(txt_madv.Text);
+                MessageBox.Show("xoa thanh cong ", "thông báo ");
+            }
+            else {
+                if (checkma() == false) { MessageBox.Show("ma dichvu khong ton tai", "Thông báo"); return; }
+                suadv();
+                MessageBox.Show("xoa thanh cong ", "thông báo ");
+            }
+            
         }
-
+        void suadv()
+        {
+            if (checkma() == false) { MessageBox.Show("ma dichvu khong ton tai", "Thông báo"); return; }
+            var madv1 = _BUSdichvus.getDichvu().Where(c => c.Madichvu == txt_madv.Text).FirstOrDefault();
+            madv1.Tendichvu = txt_tendv.Text;
+            madv1.Giadichvu = Convert.ToDecimal(txt_giadv.Text);
+            madv1.Ngaysudungdichvu = datengaysudung.Value;
+            madv1.Trangthai = "ngunghd";
+            madv1.Maloaidichvu = mal;
+            _BUSdichvus.SuaDichvu(madv1);
+            MessageBox.Show("sua thanh cong ", "thông báo ");
+            return;
+        }
         
 
         private void btn_luu_Click(object sender, EventArgs e)

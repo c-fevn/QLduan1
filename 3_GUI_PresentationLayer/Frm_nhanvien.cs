@@ -113,9 +113,39 @@ namespace _3_GUI_PresentationLayer
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-            if (checkma() == false) { MessageBox.Show("ma nhanvien khong ton tai", "Thông báo"); return; }
+
+            DialogResult hoi = MessageBox.Show("xóa se doi thanh ngừng hoatdong?", "thong báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (hoi == DialogResult.No)
+            {
+                if (checkma() == false) { MessageBox.Show("ma dichvu khong ton tai", "Thông báo"); return; }
+                if (checkma() == false) { MessageBox.Show("ma nhanvien khong ton tai", "Thông báo"); return; }
             _BUSnhanviens.XoaNhanvien(txt_manv.Text);
             MessageBox.Show("xoa thanh cong ", "thông báo ");
+            }
+            else
+            {
+                if (checkma() == false) { MessageBox.Show("ma dichvu khong ton tai", "Thông báo"); return; }
+                suanv();
+                MessageBox.Show("xoa thanh cong ", "thông báo ");
+            }
+
+        }
+        void suanv()
+        {
+            if (checkma() == false) { MessageBox.Show("ma nhanvien khong ton tai", "Thông báo"); return; }
+            if (checkmal() == true) { MessageBox.Show("email nhanvien da ton tai", "Thông báo"); return; }
+            var manv2 = _BUSnhanviens.getnhanvien().Where(c => c.Manhanvien == txt_manv.Text).FirstOrDefault();
+            manv2.Tennhanvien = txt_tennv.Text;
+            manv2.Email = txt_email.Text;
+            manv2.Matkhau = txt_mk.Text;
+            manv2.Sdt = txt_sdt.Text;
+            if (rbt_nhanvien.Checked == true) { manv2.Vaitro = 0; };
+            if (rbt_qtri.Checked == true) { manv2.Vaitro = 1; };
+            manv2.Trangthai = "ngunghd"; 
+            _BUSnhanviens.SuaNhanvien(manv2);
+            MessageBox.Show("sua thanh cong ", "thông báo");
+            return;
+
         }
 
         private void btn_luu_Click(object sender, EventArgs e)

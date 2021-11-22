@@ -114,13 +114,35 @@ namespace _3_GUI_PresentationLayer
         private void btn_xoa_Click(object sender, EventArgs e)
         {
 
-            if (checkma() == false)// bắt buộc phải có dữ liệu trước mới chạy được checkma()
+            DialogResult hoi = MessageBox.Show("xóa se doi thanh ngừng hoatdong?", "thong báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (hoi == DialogResult.No)
+            {
+                if (checkma() == false) { MessageBox.Show("ma dichvu khong ton tai", "Thông báo"); return; }
+                if (checkma() == false)// bắt buộc phải có dữ liệu trước mới chạy được checkma()
             { MessageBox.Show("ma loai dv khong ton tai", "Thông báo"); return; };
             _BUSloaidichvus.XoaLoaidichvu(txt_maloaidv.Text);
             MessageBox.Show("xoa thanh cong ", "thông báo ");
+            }
+            else
+            {
+                if (checkma() == false) { MessageBox.Show("ma dichvu khong ton tai", "Thông báo"); return; }
+                sualdv();
+                MessageBox.Show("xoa thanh cong ", "thông báo ");
+            }
 
         }
+        void sualdv()
+        {
+            if (checkma() == false)// bắt buộc phải có dữ liệu trước mới chạy được checkma()
+            { MessageBox.Show("ma loai dv khong ton tai", "Thông báo"); return; };
+            if (checkten() == true) { MessageBox.Show("ten loai dv da có?", "Thông báo"); return; }
 
+            var ldv = _BUSloaidichvus.getLoaidichvu().Where(c => c.Maloaidichvu == txt_maloaidv.Text).FirstOrDefault();
+            ldv.Tenloaidichvu = txt_tenloaidv.Text;
+            ldv.Trangthai = "ngunghd";
+            _BUSloaidichvus.SuaLoaidichvu(ldv);
+            MessageBox.Show("sua thanh cong ", "thông báo ");
+        }
         private void btn_luu_Click(object sender, EventArgs e)
         {
             _BUSloaidichvus.SaveLoaidichvu();
